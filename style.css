@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: darkgrey;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.form-box {
+  padding: 50px 60px 70px;
+  width: 95%;
+  max-width: 550px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+  background: #fff;
+  height: 85%;
+}
+
+.form-box h1 {
+  font-size: 35px;
+  color: #3c00a0;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.form-box h1::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  background: #3c00a0;
+  position: absolute;
+  bottom: -12%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.input-field {
+  background: #eaeaea;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  max-height: 65px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+
+input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 18px 15px;
+}
+
+form p {
+  text-align: left;
+  font-size: 13px;
+}
+
+form p a {
+  text-decoration: none;
+  color: #3c00a0;
+}
+
+.btn-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-field button {
+  flex-basis: 48%;
+  background: #3c00a0;
+  color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 1s;
+  outline: 0;
+  border: 0;
+}
+
+.input-group {
+  height: 280px;
+}
+
+.btn-field button.disable {
+  background: #eaeaea;
+  color: #555;
+}
+
+.container div {
+  margin-top: 20px;
+}
+
+.container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.container p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.container h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.container button {
+  background: #3c00a0;
+  color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 1s;
+  outline: 0;
+  border: 0;
+  margin-top: 10px;
+  width: 200px;
+}
+
+.container button:hover {
+  background: #5d27d6;
+}
+
+.container button:disabled {
+  background: #eaeaea;
+  color: #555;
+  cursor: not-allowed;
+}
+
+.container button:disabled:hover {
+  background: #eaeaea;
+}
