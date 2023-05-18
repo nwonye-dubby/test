@@ -147,3 +147,10 @@ form p a {
 .container button:disabled:hover {
   background: #eaeaea;
 }
+.title2 {
+  color: #3c00a0;
+  text-align: center;
+  top: 60px;
+  padding: 1%;
+  font-size: 250%;
+}
