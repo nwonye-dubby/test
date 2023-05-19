@@ -23,7 +23,7 @@
   transform: translate(-50%, -50%);
   position: absolute;
   text-align: center;
-  background: #fff;
+  background: rgba(255, 0, 0, 0.3);
   height: 100%;
 }
 
@@ -32,11 +32,12 @@
   color: #3c00a0;
   margin-bottom: 60px;
   position: relative;
+  margin-top: 10%;
 }
 
-.form-box h1::after {
+/*.form-box h1::after {
   content: "";
-  width: 30px;
+  width: 80px;
   height: 4px;
   border-radius: 3px;
   background: #3c00a0;
@@ -44,7 +45,7 @@
   bottom: -12%;
   left: 50%;
   transform: translate(-50%);
-}
+}*/
 
 .input-field {
   background: #eaeaea;
@@ -154,7 +155,7 @@ form p a {
   font-size: 250%;
   /*font-family: Verdana, Geneva, Tahoma, sans-serif;
   /*background-color: rgba(255, 0, 0, 0.3);*/
-  font-style: italic;
+  font-style: normal;
   color: #3c00a0;
   font-weight: bold;
 }

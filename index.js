@@ -44,12 +44,26 @@ function createAccount() {
 }
 // Function to handle the signup button click
 signupBtn.onclick = function () {
-  createAccount();
-  nameField.style.maxHeight = "60px";
-  title.innerHTML = "Sign In";
-  signupBtn.classList.add("disable");
-  signinBtn.classList.remove("disable");
+  validateEmail(); // Call the validateEmail() function
 };
+
+function validateEmail() {
+  const emailInput = document.getElementById("emailInput");
+  const email = emailInput.value;
+
+  // Regular expression for email validation
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (emailRegex.test(email)) {
+    // Email is valid, proceed with form submission or other actions
+    createAccount(); // Call the createAccount() function or perform your desired actions
+  } else {
+    alert("Invalid email address!");
+    // Clear the input field or display an error message
+    emailInput.value = "";
+    emailInput.focus();
+  }
+}
 
 // Function to handle the signin button click
 signinBtn.onclick = function () {
